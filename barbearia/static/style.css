@@ -1,0 +1,139 @@
+.cabecalho {
+    background: rgb(189, 186, 186);
+    padding: 20px 0;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+}
+
+.cabecalho h1 :hover {
+    color: #a71717;
+}
+
+.titulo {
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px
+    
+}
+
+nav p {
+    padding-left: 250px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.menu-cabelo-barba {
+    width: 940px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    
+}
+
+.menu-cabelo-barba li {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 50px;
+    padding: 30px 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+    
+}
+
+.menu-cabelo-barba a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu-cabelo-barba h2 {
+    font-size: 25px;
+}
+
+.menu-cabelo-barba :hover {
+    color: #a71717;
+    border-color: #a71717;
+}
+
+.menu-cabelo-barba :hover h2 {
+    font-size: 30px;
+}
+
+nav li :hover {
+    color: #a71717;
+}
+
+footer {
+    background: url(bg.jpg);
+    text-align: center;
+    color: white;
+}
+
+.caixa-informacoes {
+    width: 940px;
+    margin: 20px auto;
+}
+
+.caixa-informacoes li {
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.caixa-informacoes li :hover {
+    color: #a71717;
+}
+
+.caixa-informacoes a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+table {
+    width: 500px;
+}
+
+td {
+    border: 2px solid black;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.caixa-informacoes h2 {
+    padding: 10px 0;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}

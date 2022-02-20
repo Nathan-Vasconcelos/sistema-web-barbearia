@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'reset.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Cortes de cabelo</title>
+</head>
+<body>
+    {% include 'partials/_menu.html' %}
+
+    <main>
+        {% if cortes %}
+        {% for corte in cortes %}
+        <ul class="menu-cabelo-barba">
+            <li>
+                <a href="">
+                    <h2>{{ corte.nome_corte }}</h2>
+                    {% if corte.foto_corte == '' %}
+                        <img src="{% static 'cabelo.jpg' %}" alt="foto-cabelo" width="300" height="300">
+                    {% else %}
+                        <img src="{{ corte.foto_corte.url }}" alt="foto-cabelo" width="300" height="300">
+                    <p>R${{ corte.valor_corte }}</p>
+                    {% endif %}
+                </a>
+            </li>
+        </ul>
+        {% endfor %}
+        {% else %}
+        {% endif %}
+    </main>
+
+    {% include 'partials/_footer.html' %}
+    
+</body>
+</html>

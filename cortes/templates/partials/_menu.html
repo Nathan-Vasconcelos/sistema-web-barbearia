@@ -1,0 +1,14 @@
+{% load static %}
+<header class="cabecalho">
+    <div class="caixa">
+        <h1><img src="{% static 'barbearia-logopng.png' %}" alt="logo-da-barbearia"></h1>
+        <h1 class="titulo"> <a href="{% url 'index' %}">BARBEARIA SPARTA</a></h1>
+        <nav>
+            <ul>
+                <li class="lista"><a href="{% url 'informacoes' %}">CONTATOS</a></li>
+                <li class="lista"><a href="{% url 'informacoes' %}">HORÁRIOS</a></li>
+                <li class="lista"> <a href="{% url 'informacoes' %}">ENDEREÇO</a></li>
+            </ul>
+        </nav> 
+    </div>
+</header>
